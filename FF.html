@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="FF.css">
+<title>Hotel Valley</title>
+<script type="text/javascript" src="FF.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+margin-left:700px;
+  border-bottom: 5px solid black;
+   font-family: Arial, Helvetica, sans-serif;    
+}
+p{
+margin-left:700px;
+}
+</style>
+</head>
+<body>
+<form action ="#">
+<h1 style="font-size:70px">Hotel Valley</h1>
+<p> Welcome to Hotel Valley. Each room costs Rs.100 per day and each facility costs an additional amount of Rs.50. Payment accepted at reception.  We look forward to your visit and hope you enjoy your stay with us!</p>
+<div id="fullpage">
+<h2>Get your Reservation:</h2>
+<table border="0">
+<tr>
+<td class="label_col">First Name:</td>
+<td class="input_col"><input name="firstName" id="firstName" type="text" onblur="validateFirstName();"></td>
+<td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label_col">Last Name:</td>
+<td class="input_col"><input name="lastName" id="lastName" type="text" onblur="validateLastName();"></td>
+<td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label_col">Phone Number:</td>
+<td class="input_col"><input name="phone" id="phone" type="text" placeholder="xxx-xxx-xxxx" onblur="validatePhoneNumber();"></td>
+<td class="feedback_col"><span id="phonePrompt"></span></td>
+</tr>
+<tr>
+<td class="label_col">From:</td>
+<td class="input_col"><input name="fromdate" id="fromdate" type="date" onblur="validatefromDate();" ></td>
+<td class="feedback_col"><span id="fromPrompt"></span></td>
+</tr>
+<tr>
+<td class="label_col">To:</td>
+<td class="input_col"><input name="todate" id="todate" type="date" onblur="validatetoDate();"></td>
+<td class="feedback_col"><span id="toPrompt"></span></td>
+</tr>
+<tr>
+<td class="label_col">Number of Rooms:</td>
+<td class="input_col"><input name="room" id="room" type="number" value="1" min="1"></td>
+</tr>
+<tr>
+<td class="label_col">Complimentary meal:</td>
+<td class="input_col"><input name="food" id="food" type="radio" value="Breakfast" onclick="Radiobutton();">Breakfast</td>
+</tr>
+<tr>
+<td></td>
+<td class="input_col"><input name="food" id="food" type="radio" value="Lunch" onclick="Radiobutton();">Lunch</td>
+</tr>
+<tr>
+<td></td>
+<td class="input_col"><input name="food" id="food" type="radio" value="Dinner" onclick="Radiobutton();">Dinner</td>
+</tr>
+<tr>
+<td class="label_col">Facilities:</td>
+<td class="input_col"><input name="facility" id="facility" type="checkbox" value="Gym" onclick="checkBox();">Gym</td>
+<td class="feedback_col"><span id="fPrompt">Additional Charge</span></td>
+</tr>
+<tr>
+<td></td>
+<td class="input_col"><input name="facility" id="facility" type="checkbox" value="Spa" onclick="checkBox();">Spa</td>
+</tr>
+<tr>
+<td></td>
+<td class="input_col"><input name="facility" id="facility" type="checkbox" value="Steam Room" onclick="checkBox();">Steam Room</td>
+</tr><br>
+<tr>
+<td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="display();">Book Now</span></td>
+</tr>
+</table>
+<span id="orderConfirm"></span>
+</div>
+</form>
+</body>
+</html>

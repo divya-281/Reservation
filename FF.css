@@ -1,0 +1,48 @@
+body
+{
+font-family:"Times New Roman",Times,serif;
+font-size:large;
+ background-image:url("https://www.audiosushi.com/wp-content/uploads/2017/01/poolbar.jpg"); 
+ background-size:50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:left;   
+  } 
+table
+{
+	width:500px;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+td
+{
+	vertical-align:top;
+	padding:5px;
+	word-wrap:break-word;
+}
+#fullpage
+{
+	margin-left:800px;
+	
+}
+.label_col{
+	text-align:right;
+}
+.input_col{
+text-align:left;}
+.feedback_col{
+	text-align:center;
+	vertical-align:middle;
+	color:Gray;
+	font-size:small;
+}
+.Button{
+	margin:auto;
+	text-align:center;
+	width:50px;
+}
+.buttonBG{
+	background-color:LightGray;
+	border-radius:20px;
+	padding:5px;
+}
